@@ -9,3 +9,8 @@ $(document).ready(function(){
     $('#info3').toggle();
   });
 });
+
+new window.Draggable.Sortable(document.querySelectorAll('.anchors'), { draggable: 'p', delay: 200 })
+.on('drag:start', () => console.log('drag:start'))
+.on('drag:move',  () => console.log('drag:move'))
+.on('drag:stop',  () => console.log('drag:stop'));

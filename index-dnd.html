@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Interactive Nature</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.2/lib/draggable.js"></script>
+    <script src="js/svg-inject.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-left">
+        <h1>Entstehung des Humus</h1>
+        <p>Organischen Stoffe werden mit Hilfe von Bodenlebewesen in Humus umgewandelt. Sie zersetzen die organische Masse nach und nach in ihre Bestandteile.</p>
+        <p>Dabei entstehen zunächst Huminstoffe, in denen Nährstoffe und Mineralstoffe gebunden sind.</p>
+        <div class="anchors">
+          <p id="toggle-info1" data-dropzone="1">Drag Eins</p>
+          <p id="toggle-info2" data-dropzone="2">Drag Zwei</p>
+          <p id="toggle-info3" data-dropzone="3">Drag Drei</p>
+        </div>
+      </div>
+      <div class="side-right" data-dropzone="1">
+      <img src="nature.svg" onload="SVGInject(this)" />
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
