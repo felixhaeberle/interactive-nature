@@ -10,7 +10,14 @@ $(document).ready(function(){
   });
 });
 
-new window.Draggable.Sortable(document.querySelectorAll('.anchors'), { draggable: 'p', delay: 200 })
+if(document.querySelectorAll('.anchors').length !== 0){
+  new window.Draggable.Sortable(document.querySelectorAll('.anchors'), { draggable: 'p', delay: 200 })
 .on('drag:start', () => console.log('drag:start'))
 .on('drag:move',  () => console.log('drag:move'))
 .on('drag:stop',  () => console.log('drag:stop'));
+}
+
+$(document).on('input', '#year-range', function() {
+  let value = $(this).val();
+  $('#ground #Vector_43').attr('transform', 'scale(' + (1 + value/200) + ')');
+});
