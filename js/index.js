@@ -1,0 +1,3 @@
+SVGInject.setOptions({
+  makeIdsUnique: false
+});
