@@ -6,5 +6,5 @@
 
 ## Info
 
-IKS project @ Hochschule für Gestaltung Schwäbisch Gmünd
+IKS project @ Hochschule für Gestaltung Schwäbisch Gmünd<br>
 Team Felix Häberle Tobias Ertel Zacharie Reifegerst
